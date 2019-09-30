@@ -1,0 +1,94 @@
+html{
+    font-size: 16px;
+}
+
+div,img {
+    position: absolute;
+}
+
+#container {
+    position: relative;
+    z-index: 1;
+    width: 50rem;
+    height: 30rem;
+    margin: 0 auto;
+    background: url("../img/hurdle/bg.png") repeat-x;
+    overflow: hidden;
+    background-size: contain;
+    text-align: center;
+}
+.header-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    line-height: 5rem;
+    vertical-align: middle;
+    text-align: right;
+}
+.header-wrap div,
+.header-wrap img{
+    position: static;
+}
+
+#hurdle-count {top: 1.5rem;left: 1.5rem;font-weight: bold;text-align: left;color: #27753c;font-size: 2rem;font-family: fantasy;}
+
+#game-road {
+    bottom: 0;
+    left: 0;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 64%;
+    background:url("../img/hurdle/road.png")  repeat-x;
+    background-size: contain;
+    background-position: left bottom;
+}
+
+img#game-start {
+    position: relative;
+    z-index: 3;
+    top: 24rem;
+    width: 8rem;
+    height: 3.3rem;
+}
+
+img#guy {
+    width: 8rem;
+    height: 11rem;
+    bottom: 9rem;
+    left: 1rem;
+    transition: bottom 0.4s;
+}
+
+img#btn-rule {
+    top: 1.5rem;
+    right: 2rem;
+    width: 10em;
+    height: 2.6rem;
+}
+
+#modal-rule {
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: url("../img/hurdle/bg_rule.png") no-repeat;
+    background-size: contain;
+}
+
+#tip {
+    top: 40%;
+    z-index: 99;
+    width: 100%;
+    height: 200px;
+    font-size: 23px;
+    text-align: center;
+    line-height: 222px;
+    background: url("../img/hurdle/bg_toast.png") no-repeat center;
+}
+
+
