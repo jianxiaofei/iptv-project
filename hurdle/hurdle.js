@@ -32,7 +32,7 @@
             tipEl.innerHTML = msg;
 
             setTimeout(() => {
-                // location.reload();
+                location.reload();
                 // focusAction.back(ret);
             }, 2000);
         },
@@ -98,7 +98,7 @@
                 animateGuy: () => {
                     if (!that.isJumping) {
                         nSrc === 4 ? nSrc = 1 : nSrc++;
-                        guyElement.src = '../img/hurdle/s' + nSrc + '.png'; // 人物动起来
+                        guyElement.src = './img/s' + nSrc + '.png'; // 人物动起来
                     }
                 },
 
@@ -155,7 +155,7 @@
 
                 // 更新人物状态
                 update: () => {
-                    guyElement.src = '../img/hurdle/jump.png'; // 人物跳起来
+                    guyElement.src = './img/jump.png'; // 人物跳起来
                     moveY.hover();
                 },
 
@@ -253,8 +253,8 @@
         'game-start': {
             id: 'game-start',
             nextFocusUp: 'btn-rule',
-            bgImg: '../img/hurdle/btn_start.png',
-            FocusBgImg: '../img/hurdle/btn_start_f.png',
+            bgImg: './img/btn_start.png',
+            FocusBgImg: './img/btn_start_f.png',
             onFocus: focusAction.active,
             click: focusAction.click,
             move: focusAction.move
@@ -262,8 +262,8 @@
         'btn-rule': {
             id: 'btn-rule',
             nextFocusDown: 'game-start',
-            bgImg: '../img/hurdle/btn_rule.png',
-            FocusBgImg: '../img/hurdle/btn_rule_f.png',
+            bgImg: './img/btn_rule.png',
+            FocusBgImg: './img/btn_rule_f.png',
             onFocus: focusAction.active,
             click: focusAction.click,
             move: focusAction.move
